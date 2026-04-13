@@ -1,8 +1,15 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "regions": ["hkg1", "sin1", "sfo1"],
+  "regions": [
+    "hkg1",
+    "sin1",
+    "sfo1"
+  ],
   "rewrites": [
-    { "source": "/(.*)", "destination": "api/handler" }
+    {
+      "source": "/(.*)",
+      "destination": "api/handler"
+    }
   ],
   "functions": {
     "api/handler.js": {
